@@ -65,7 +65,7 @@ Euler totient of n, phi(n)=(p-1)*(q-1) , since p and q are primes we get that fo
 (Euler totient of n, is the number of numbers lesser than n which are relatively prime to n, ie., <br>
 if a and n are relatively prime, gcd(a,n)=1.<br>
 A number e is choosen such that gcd(phi(n),e)=1.<br>
-A number d is found such that d ≡ e^(-1) mod phi(n) or de ≡ 1 mod phi(n)<br>
+A number d is found such that d ≡ e^(-1) mod phi(n) or d * e ≡ 1 mod phi(n)<br>
 Private key: {n,d}<br>
 Public key: {n,e}<br>
 
@@ -75,12 +75,14 @@ To decrypt cipher text, C: Message, M ≡ C^(d) mod phi(n)<br>
 In the Info.txt we are given the encrypter's public key info: <br>
 --> n=421649 and e=17<br>
 421649 has only two factors other than 1 and itself: 557 and 757<br>
-421649=1*421649=557*757=p*q<br>
+421649=1 * 421649=557 * 757=p * q<br>
 --> p=557, q=757<br>
-    phi(n)=(p-1)*(q-1)=556*756<br>
+    phi(n)=(p-1) * (q-1)=556 * 756<br>
 --> phi(n)=420336<br>
     gcd(phi(n),e)=gcd(420336,17)=1 Yupp!<br>
-    d*17 ≡ 1 mod phi(n)<br>
+    d * 17 ≡ 1 mod phi(n)<br>
 --> d=74177<br>
 Decrypting number by number keeping the password of the form RSA(..something..),<br>
-RSA(9135 5700 6382 9648 7286 4198 1686 3054)<br>
+RSA(9135 5700 6382 9648 7286 4198 1686 3054) But, that's not teh password :( <br>
+Converting 'Web.Club' to ascii => 87 101 98 46 67 108 117 98 
+On decrypting, we get: 
