@@ -84,5 +84,7 @@ In the Info.txt we are given the encrypter's public key info: <br>
 --> d=74177<br>
 Decrypting number by number keeping the password of the form RSA(..something..),<br>
 RSA(9135 5700 6382 9648 7286 4198 1686 3054) But, that's not teh password :( <br>
-Converting 'Web.Club' to ascii => 87 101 98 46 67 108 117 98 
-On decrypting, we get: 
+
+Converting 'Web.Club' to ascii => 8710198466710811798 
+On decrypting, rsa: 
+33578
