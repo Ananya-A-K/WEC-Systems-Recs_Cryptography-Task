@@ -86,5 +86,7 @@ Decrypting number by number keeping the password of the form RSA(..something..),
 RSA(9135 5700 6382 9648 7286 4198 1686 3054) But, that's not teh password :( <br>
 
 Converting 'Web.Club' to ascii => 8710198466710811798 
-On decrypting, rsa: 
-33578
+On decrypting, using rsa private key: 192211    Nope :(
+On encrypting, using rsa public key: 375834     Nope :(
+Even tried decrypting the ascii text multiple times, but it wasn't right!
+I couldn't figure out any further than this.
